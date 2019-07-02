@@ -1,0 +1,15 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let product of products">
+      <div class="card-columns" >
+        <img src="assets/images/{{product.product_name}}.jpg"  alt="" class="card-img-top h-200">
+
+        <div class="card-body">
+            <p>{{product.product_name}}</p>
+          <a class="btn btn-primary btn-sm" (click)="goToDetails(product)">Product Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
